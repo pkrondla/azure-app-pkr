@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_pkr</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/8eb620d0-e8e5-4b4d-8ffe-8fa2e2d140d3/resourceGroups/az-app-pkr-git/providers/microsoft.insights/components/az-app-pkr-git</ApplicationInsightsResourceId>
+    <UserSecretsId>b9d0adec-c1ea-436e-9401-86485b9fdd12</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+  </ItemGroup>
 
 </Project>
